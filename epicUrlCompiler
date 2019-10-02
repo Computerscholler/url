@@ -1,0 +1,25 @@
+def main():
+    url = input('url to compile: ')
+    info = ""
+    if url.find("https://") == -1:
+        if url.find("http://") == -1:
+            print("Error - Not a valid url")
+            return
+        else:
+            url = url.replace("http://", "")
+            info = "-Unverschlüsselt"
+    else:
+        url = url.repalce("https://", "")
+        info = "-Verschlüsselt"
+
+    info = info +" -3rd level domain:" + url[:url.find(".")]
+    url = url.replace(url[:url.find(".")], "")
+    info = info +" -2nd level domain:" + url[:url.find(".")]
+    url = url.replace(url[:url.find(".")], "")
+    info = info +" -top level donain:" + url
+    print("info:" + info)
+
+
+
+if __name__ == '__main__':
+    main()
