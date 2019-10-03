@@ -18,7 +18,7 @@ def main():
     url = url.replace(url[:url.find(".")], "")
     info = info +" -top level donain:" + url
     print("info:" + info)
-    print("my name jeff"
+    print("my name jeff")
 
 
 
