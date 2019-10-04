@@ -1,2 +1,2 @@
-URL -> "https:"DOMAIN
-URL -> "http:"DOMAIN
+URL = PROTOCOL ':' SUBDOMAIN '.' DOMAIN '.' TLD '/' [PATH] FILE; 
+
