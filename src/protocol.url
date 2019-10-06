@@ -1,1 +1,1 @@
-PROTOCOL = 'h''t''t''p'|'h''t''t''p''s'|'f''t''p'|'f''i''l''e;'
+PROTOCOL = 'http[s]' | 'ftp'['s'] | ('s' | 't') 'ftp' | '[s]' | 'ws' ['s'];
