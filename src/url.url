@@ -1,4 +1,7 @@
-URL = PROTOCOL ':' SUBDOMAIN '.' DOMAIN '.' TLD '/' [PATH] FILE;
+URL = PROTOCOL ':' ((SUBDOMAIN '.' DOMAIN '.' TLD) | DOMAIN) '/' [PATH] [FILE] '?' ARGS;
 PROTOCOL = 'http[s]' | 'ftp'['s'] | ('s' | 't') 'ftp' | '[s]';
 CHARACTER = 'a' | 'b' | 'c' | ... | 'z' | '0' | '1' | '2' | ... | '9';
 SUBDOMAIN = CHARACTER {CHARACTER} '-' {CHARACTER} CHARACTER;
+ARGS = ARG '=' PARAM
+ARG = {CHARACTER}
+PARAM = {CHARACTER}
